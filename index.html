@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+  <header>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the plattform</p>
+
+  </header>
+
+  <body>
+  <form id="survey-form">
+    <label class="survey" id="name-label">Name<input  class="survey" required id="name" placeholder="Enter your name"></input></label>
+    <label class="survey" id="email-label">Email<input  class="survey" type="email" required id="email" placeholder="Enter your Email"></input></label>
+    <label class="survey" id="number-label">Age (optional)<input class="survey" min="13" max="120" type="number" required id="number" placeholder="age"></input></label>
+    <p class="option"> Which option best describes your current role
+    <select class="survey" id="dropdown" name="role">
+      <option value="">Select current role</option>
+      <option value"student">Student</option>
+      <option value"job">Full Time Job</option>
+      <option value"learner">Full Time Learner</option>
+      <option value"preferNo">Prefer not to say</option>
+      <option value"other">other</option>
+      </select>
+
+<p class="option">Would you recommend freeCodeCamp to a friend?</p>
+
+    <label><input checked type="radio" name="user-recommend"      value="Definitely">Definitly</input></label> 
+    <label><input type="radio" name="user-recommend" value="Maybe">Maybe</input></label>
+    <label><input type="radio" name="user-recommend" value="Not sure">Not sure</input></label>
+
+<p class="option">What is your favorite feature of freeCodeCamp?</p>
+
+<select class="section" id="most-like" name="mostlike">
+      <option value="">Select an option</option>
+      <option value"challenges">Challenges</option>
+      <option value"projects">Projects</option>
+      <option value"community">Community</option>
+      <option value"openSource">Open Source</option>
+      </select>
+<p class="option"> What would you like to see improved? (Check all that apply)
+
+    <label class="survey"><input value="frontend" type="checkbox">Front-end Projects</label>
+    <label class="survey"><input value="backend" type="checkbox">Back-end Projects</label>
+    <label class="survey"><input value="dataVis" type="checkbox">Data Visualization</label>
+ 
+<label class="survey"><textarea></textarea></label>
+<label><button id="submit" name="Submit">Submit</button>
+</body>
+ </html>
